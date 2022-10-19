@@ -21,19 +21,19 @@ For further reference, please consider the following sections:
 * First run Consumer(Sensor Report) using `mvn spring-boot:run` and then do the same for Producer(Sensor Simulator)
 
 ### TODOs
-- [ ] The application can receive new metric values as the weather changes around the sensor via an API call.
+- [x] The application can receive new metric values as the weather changes around the sensor via an API call.
 	- This is accomplished using Producer-Consumer Pattern Application
-- [ ] One or more (or all sensors) to include in results.
+- [x] One or more (or all sensors) to include in results.
 	- Using `http://localhost:8080/weatherreport/` API URL, the all the sensors datas are returned
-- [ ] The metrics (e.g. temperature and humidity); the application should return the average value for these metrics.
+- [x] The metrics (e.g. temperature and humidity); the application should return the average value for these metrics.
 	- Partially completed - Only Temperature is done `http://localhost:8080/weatherreport/temperature/average`
-- [ ] The statistic for the metric: min, max, sum or average.
+- [x] The statistic for the metric: min, max, sum or average.
 	- Partially completed - Only Temperature is done `http://localhost:8080/weatherreport/temperature/average`
-- [x] A date range (between one day and a month, if not specified, the latest data should be queried).
+- [ ] A date range (between one day and a month, if not specified, the latest data should be queried).
 	- This is not completed due to time constraint
-- [x] The application data must be persisted in some kind of database/storage.
+- [ ] The application data must be persisted in some kind of database/storage.
 	- Used in-memory database, as this will be easy if you have to quickly run throught
-- [x] Include input validation and exception handling, as and where you find necessary.
+- [ ] Include input validation and exception handling, as and where you find necessary.
 	- Only Page not found handled 
 
 
